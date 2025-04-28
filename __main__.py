@@ -97,7 +97,7 @@ def trainNN(epochs=5, batch_size=16, lr=0.001, display_test_acc=False):
 
         print(f"Epoch {epoch + 1} Loss: {total_loss:.4f}")
 
-        # Evaluation
+    # Evaluation
     model.eval()
     with torch.no_grad():
         x_test = torch.tensor(X_test, dtype=torch.float32).to(device)
